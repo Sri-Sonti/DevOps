@@ -233,19 +233,9 @@ def JmsStats():
 #  Invoke Main and end
 #=====================================================================================
 
-#userprops = loadPropertiesFromFile("build.properties")
-#userprops = loadPropertiesFromFile("/opt/app/phone/poc/41/phonedomain/servers/eusbadminsvr/security/boot.properties")
-#username = weblogic.security.Decrypt(userprops['username'])
-#passwd   = weblogic.security.Decrypt(userprops['password'])
-
-
-
 try:
      connect(userConfigFile=userprops['ucf'], userKeyFile=userprops['ukf'], url=userprops['admin.url']) 
  
-#     connect(userprops['user.name'],userprops['user.password'],userprops['admin.url'])
-#storeUserConfig('/opt/app/phone_stage/Monitor/myuserconfigfile.secure','/opt/app/phone_stage/Monitor/myuserkeyfile.secure')
-
      getRunningServerNames()
      serverRuntime()
      while 1: 

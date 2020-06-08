@@ -5,7 +5,7 @@ variable "name" {
 
 # Configure the Docker provider
 provider "docker" {
-  host = "tcp://192.168.99.102:2376"
+  host = "tcp://19.16.9.12:2376"
   cert_path="/mnt/c/Users/Sri/.docker/machine/machines/default"
 }
 

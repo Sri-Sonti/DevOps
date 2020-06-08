@@ -4,7 +4,7 @@ variable "name" {
 
 provider "postgresql" {
    
-  host            = "192.168.99.102"
+  host            = "19.16.9.12"
   username        = "guacamole_user"
   password        = "potato"
   sslmode         = "disable"
